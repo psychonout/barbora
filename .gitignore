@@ -1,0 +1,28 @@
+# Shelve files
+*.bak
+*.dat
+*.dir
+*.db
+
+# Credential files
+*.json
+*.yaml
+*.pem
+config.py
+
+# Logs
+*.log
+
+# Precompiled binaries
+*.pyc
+
+# Venv
+venv/
+winenv/
+__pycache__/
+
+# Vim save files
+*.swp
+*.swo
+*.swu
+
