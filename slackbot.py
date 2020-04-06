@@ -1,12 +1,11 @@
-from config import bot_token
+from config import slack_settings
 from slack import WebClient
 
 
-CLIENT = WebClient(token=bot_token())
+SETTINGS = slack_settings()
 
-CHANNELS = {
-    "barbora": "C0113NV7JG2"
-}
+CLIENT = WebClient(token=SETTINGS["token"])
+
 
 '''
     TODO:
@@ -16,11 +15,7 @@ CHANNELS = {
 '''
 
 
-def send_message(message, channel="C84RDUGQZ"):
+def send_message(message, channel="general"):
     CLIENT.chat_postMessage(
-        channel=channel,
+        channel=SETTINGS[channel],
         text=message)
-
-
-def call_somebody(user="D85B580RG"):
-    pass

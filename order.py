@@ -10,9 +10,12 @@
             returns {"user": "",
                      "pass": ""}
 
-        Slack API Token:
-        bot_token():
-            returns "token_as_string"
+        slack_settings():
+            returns {
+                "token": "",
+                "barbora": "channel_id",
+                "general": "channel_id"
+            }
 
         https://myaccount.google.com/apppasswords
         gmail_smtp():
