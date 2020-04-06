@@ -11,7 +11,6 @@ CLIENT = WebClient(token=SETTINGS["token"])
     TODO:
         function to get channels
         find out if possible to make calls
-        push it to github and make pull process for all the other locations
 '''
 
 

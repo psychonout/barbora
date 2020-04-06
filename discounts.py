@@ -23,7 +23,8 @@ while True:
         discount = False
 
         try:
-            discount = product_info[index].find(class_="b-product-promo-label-primary--percent").contents[0].strip()
+            look_for = "b-product-promo-label-primary--percent"
+            discount = product_info[index].find(class_=look_for).contents[0].strip()
         except Exception:
             pass
         print(f"{price:>7} {discount:^5} {title}")
