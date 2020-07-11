@@ -136,8 +136,8 @@ if __name__ == "__main__":
         time.sleep(2)
         as_xpath = "b-deliverytime--slot-available"
         available_slots = driver.find_elements_by_class_name(as_xpath)
+        city = region.capitalize()
         if len(available_slots) > 0:
-            city = region.capitalize()
             message = f"Barbora timeslots are available for {city}!"
             send_message(message, "barbora")
             if NOTIFY:
